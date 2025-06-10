@@ -19,6 +19,7 @@ function Redirect.new(properties: DialogueConstructorProperties?, children: Dial
     type = "Redirect" :: "Redirect";
     settings = if properties then properties.settings else nil;
     runInitializationAction = if properties then properties.runInitializationAction else nil;
+    runCleanupAction = if properties then properties.runCleanupAction else nil;
     runCompletionAction = if properties then properties.runCompletionAction else nil;
     verifyCondition = if properties then properties.verifyCondition else nil;
   }, children);
